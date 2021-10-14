@@ -6,7 +6,10 @@ const homeComponent = () => {
 
   const homeText = document.createElement('p')
   homeText.classList.add('home-text')
-  homeText.innerText = "Take a break from it all... and find yourself kite-surfing on the idyllic Lake Hume, tucking in to a wood-fired pizza and sleeping among the stars."
+  homeText.innerText = `THE ELMS, THOLOGOLONG` + String.fromCharCode(13) +
+                        `36` + String.fromCharCode(176) + `00'05.3",` + 
+                        `147` + String.fromCharCode(176) + `21'16.7",` + String.fromCharCode(13) +
+                        ` Since June 2011`
 
   component.appendChild(homeText)
 
