@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,9 @@
   },
   "homepage": "https://github.com/cambeckingsale/the-elms#readme",
   "devDependencies": {
-    "webpack": "^5.58.2",
+    "css-loader": "^6.4.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.1",
     "webpack-cli": "^4.9.0"
   }
 }
