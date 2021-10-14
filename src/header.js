@@ -10,13 +10,13 @@ const headerComponent = () => {
 
   const icon = document.createElement('div')
   icon.classList.add('material-icons')
-  icon.style.fontSize = 'xx-large'
   icon.classList.add('header-item-left')
+  icon.style.fontSize = 'xx-large'
   icon.innerText = 'cabin'
   siteLogo.appendChild(icon)
 
   const text = document.createElement('div')
-  text.innerText = "THE ELMS";
+  text.innerText = "The Elms";
   text.classList.add('header-item-left')
   siteLogo.appendChild(text)
 
@@ -35,7 +35,7 @@ const headerComponent = () => {
   const accom = document.createElement('div');
   accom.classList.add('header-item-right')
   accom.classList.add('header-item-vl')
-  accom.innerText = 'Accomodation'
+  accom.innerText = 'Accomodation & Facilities'
   siteTabs.appendChild(accom)
 
   const contact = document.createElement('div');
