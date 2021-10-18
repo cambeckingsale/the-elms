@@ -131,6 +131,7 @@ body {
 
 .accom-item:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .accom-img {
@@ -167,4 +168,11 @@ body {
 
   background: url('./cows.jpg') no-repeat center fixed;
   background-size: cover;
+}
+
+.contact-map {
+  padding: 3em;
+
+  background: rgb(0 0 0 / 60%);
+  border-radius: 0.5em;
 }
