@@ -2,6 +2,7 @@ import './style.css';
 import headerComponent from './header';
 import homeComponent from './home';
 import accomComponent from './accom';
+import contactComponent from './contact'
 
 function homeComp() {
   const component = document.createElement('div');
@@ -33,7 +34,22 @@ function accomLoad() {
   content.appendChild(accomComp());
 }
 
-export {accomLoad, homeLoad}
+function contactComp() {
+  const component = document.createElement('div');
+
+  component.appendChild(headerComp);
+  component.appendChild(contactComponent())
+
+  return component;
+}
+
+function contactLoad() {
+  const content = document.querySelector('#content');
+  content.textContent = "";
+  content.appendChild(contactComp());
+}
+
+export {accomLoad, homeLoad, contactLoad}
 
 const headerComp = headerComponent();
 homeLoad();

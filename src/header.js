@@ -1,6 +1,6 @@
 import './style.css';
 
-import { homeLoad, accomLoad } from './index';
+import { homeLoad, accomLoad, contactLoad} from './index';
 
 const headerComponent = () => {
   const component = document.createElement('header');
@@ -85,7 +85,7 @@ function contactClicked() {
   document.getElementById('contact').classList.add('header-item-selected');
   document.getElementById('accom').classList.remove('header-item-selected');
   document.getElementById('home').classList.remove('header-item-selected');
-  //accomLoad()
+  contactLoad()
 }
 
 export default headerComponent;
